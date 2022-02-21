@@ -1,185 +1,89 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>6-1-7 複数画像を中央に注目させて見せる</title>
-    <meta name="description" content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
-
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
         href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
-        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-1/css/5-3-1.css">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        @charset "utf-8";
-
-        /*==================================================
-スライダーのためのcss
-===================================*/
-        .slider {
-            /*横幅94%で左右に余白を持たせて中央寄せ*/
-            width: 94%;
-            margin: 0 auto;
-        }
-
-        .slider img {
-            width: 60vw;
-            /*スライダー内の画像を60vwにしてレスポンシブ化*/
-            height: auto;
-        }
-
-        .slider .slick-slide {
-            transform: scale(0.8);
-            /*左右の画像のサイズを80%に*/
-            transition: all .5s;
-            /*拡大や透過のアニメーションを0.5秒で行う*/
-            opacity: 0.5;
-            /*透過50%*/
-        }
-
-        .slider .slick-slide.slick-center {
-            transform: scale(1);
-            /*中央の画像のサイズだけ等倍に*/
-            opacity: 1;
-            /*透過なし*/
-        }
-
-
-        /*矢印の設定*/
-
-        /*戻る、次へ矢印の位置*/
-        .slick-prev,
-        .slick-next {
-            position: absolute;
-            /*絶対配置にする*/
-            top: 42%;
-            cursor: pointer;
-            /*マウスカーソルを指マークに*/
-            outline: none;
-            /*クリックをしたら出てくる枠線を消す*/
-            border-top: 2px solid #666;
-            /*矢印の色*/
-            border-right: 2px solid #666;
-            /*矢印の色*/
-            height: 15px;
-            width: 15px;
-        }
-
-        .slick-prev {
-            /*戻る矢印の位置と形状*/
-            left: -1.5%;
-            transform: rotate(-135deg);
-        }
-
-        .slick-next {
-            /*次へ矢印の位置と形状*/
-            right: -1.5%;
-            transform: rotate(45deg);
-        }
-
-        /*ドットナビゲーションの設定*/
-
-        .slick-dots {
-            text-align: center;
-            margin: 20px 0 0 0;
-        }
-
-        .slick-dots li {
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-        .slick-dots button {
-            color: transparent;
-            outline: none;
-            width: 8px;
-            /*ドットボタンのサイズ*/
-            height: 8px;
-            /*ドットボタンのサイズ*/
-            display: block;
-            border-radius: 50%;
-            background: #ccc;
-            /*ドットボタンの色*/
-        }
-
-        .slick-dots .slick-active button {
-            background: #333;
-            /*ドットボタンの現在地表示の色*/
-        }
-
-
-        /*========= レイアウトのためのCSS ===============*/
-
-        body {
-            background: #eee;
-        }
-
-        h2,
-        p {
-            text-align: center;
-            padding: 20px;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        a {
-            color: #333;
-        }
-
-        a:hover,
-        a:active {
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fw-bolder fixed-top">
+            <div class="container">
+                <a class="navbar-brand fs-toppic " href="#">NEKO HOTERU</a>
+                <ul class="fs-content gnavi">
+                    <li class="nav-item "> <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item current "> <a class="nav-link active " aria-current="page"
+                            href="room.html">ROOMS</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page"
+                            href="policies.html">POLICIES</a></li>
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page"
+                            href="reserve.html">RESERVE</a></li>
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page"
+                            href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <h2>複数画像を中央に注目させて見せる</h2>
+    <div class="heading bg-rice">
+        <h1 class="fs-toppic">ROOMS</h1>
+        <p class="fs-describe">RATE ROOM</p>
+    </div>
 
-    <ul class="slider">
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg" alt="">
-        </li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt="">
-        </li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt="">
-        </li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt="">
-        </li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt="">
-        </li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt="">
-        </li>
-        <!--/slider-->
-    </ul>
-    <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a>
-    </p>
+    <section class="feature-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 themed-grid-col d-flex align-items-start feature-pad_img">
+                    <img src="imgs/cat_room1.jpg">
+                    <img src="imgs/cat_room2.jpg">
+                </div>
+                <div class="col-md-6 themed-grid-col feature-pad_text">
+                    <h1 class="fs-toppic">STANDARD ROOM</h1><br>
+                    <p class="fs-content">Standard Room<br>
+                        Room size 1.2*1.2m (we have 10 rooms)<br>
+                        Rate 350 baht/night for 2 Guest (your cats only)<br>
+                        + 1 guest charge 80 baht/guest<br>
+                        Maximum 2 Guests</p>
+                </div>
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
+            <div class="row">
+                <div class="col-md-6 themed-grid-col feature-pad_text">
+                    <h1 class="fs-toppic">VIP ROOM</h1><br>
+                    <p class="fs-content">VIP ROOM <br>
+                        Garden clear glass view for a natural relaxation<br>
+                        Room size 2.0*2.0m (we have 3 rooms)<br>
+                        Rate 500 baht/night for 4 Guests (your cats only)<br>
+                        + 1 guest charge 50 baht/guest<br>
+                        Maximum 3 Guests</p>
+                </div>
+                <div class="col-md-6 themed-grid-col d-flex align-items-start feature-pad_img">
+                    <img src="imgs/cat_room3.jpg">
+                    <img src="imgs/cat_room4.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-muted py-5 bg-dark">
+        <div class="container">
+            <p class="text-white text-center bold fs-content">@ Three lazy people don't submit work.</p>
+        </div>
+    </footer>
 
 </body>
-<script>  $('.slider').slick({
-        autoplay: true,//自動的に動き出すか。初期値はfalse。
-        infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-        speed: 500,//スライドのスピード。初期値は300。
-        slidesToShow: 3,//スライドを画面に3枚見せる
-        slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
-        prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-        nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-        centerMode: true,//要素を中央ぞろえにする
-        variableWidth: true,//幅の違う画像の高さを揃えて表示
-        dots: true,//下部ドットナビゲーションの表示
-    });</script>
 
 </html>
