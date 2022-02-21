@@ -107,7 +107,19 @@
 .feature-pad_img img{
     margin-left: 2%;
 }
-
+/* btn */
+.btn_custom{
+    margin-top: 10%;
+    display: inline-block;
+    font-weight: bold;
+    color:#fff;
+    padding: 18px 80px;
+    
+    border-radius:30px;
+    text-decoration: none;
+    outline: none;
+    background: #000000;
+}
 /*nav bar*/
 
 .gnavi {
