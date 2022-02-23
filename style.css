@@ -147,6 +147,61 @@
 .gnavi li a:hover::after {
     transform: scale(1, 1);
 }
+/*bg topic*/
+.num-bg{
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #E5E5E5;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+
+/*stuff box*/
+.box_stuff1 {
+    border-radius: 50px;
+    margin: 2%;
+    width: 250px;
+    height: 250px;
+    background-color: #E5E5E5;
+}
+
+.box_stuff2 {
+    border-radius: 50px;
+    margin: 2%;
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+}
+
+.icbox1{
+    margin-top: 48px;
+    margin-bottom: 34px;
+    height: 80px;
+    width: auto;
+}
+
+.icbox2{
+    margin-top: 53px;
+    margin-bottom: 39px;
+    height: 70px;
+    width: auto;
+}
+
+.icbox3{
+    margin-top: 55px;
+    margin-bottom: 42px;
+    height: 65px;
+    width: auto;
+}
+/*term*/
+
+.term-item{
+    margin-bottom:60px;
+}
 
 ul {
     list-style: none;
