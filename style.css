@@ -121,6 +121,30 @@
     background: #000000;
 }
 
+.btn_contact{
+    display: inline-block;
+    padding: 10px 40px;
+    font-weight: bold;
+    color: #fff;
+
+    text-decoration: none;
+    background: #000000;
+    outline: none;
+}
+
+.btn_direct{
+    display: inline-block;
+    padding: 15px 40px;
+    font-weight: bold;
+    color: #fff;
+
+    border-radius:30px;
+    text-decoration: none;
+    background: #000000;
+    outline: none;
+
+}
+
 /*nav bar*/
 nav{
     
@@ -205,6 +229,30 @@ nav{
 .term-item{
     margin-bottom:60px;
 }
+
+/*map*/
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 500px;
+    height: 280px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 500px;
+    height: 280px;
+}
+
+.gmap_iframe {
+    width: 500px !important;
+    height: 280px !important;
+}
+
+                    
+                            
+
 
 ul {
     list-style: none;
