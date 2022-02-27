@@ -142,7 +142,18 @@
     text-decoration: none;
     background: #000000;
     outline: none;
+}
 
+.btn_submit{
+    display: inline;
+    padding: 10px 60px;
+    font-weight: bold;
+    color: #fff;
+
+    border-radius: 10px;
+    text-decoration: none;
+    background: #000000;
+    outline: none;
 }
 
 /*nav bar*/
@@ -248,6 +259,11 @@ nav{
 .gmap_iframe {
     width: 500px !important;
     height: 280px !important;
+}
+
+/*input*/
+.border_date{
+    border-style: solid;
 }
 
                     
