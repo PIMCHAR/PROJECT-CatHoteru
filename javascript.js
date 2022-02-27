@@ -67,19 +67,23 @@ function cal() {
 
 /* Total price */
 function calprice() {
+    let RoomPrice = document.getElementById("roomPi");
+    let GuestPrice = document.getElementById("guestPi");
     let TotalPrice = document.getElementById("price");
     let priceRoom = 0;
     let priceGuest = 0;
 
-    if(classRoom.value == "basic"){
+    if (classRoom.value == "basic") {
         priceRoom = 350;
         priceGuest = 80;
-    }else{
+    } else {
         priceRoom = 500;
         priceGuest = 50;
     }
 
-    let totalGuest = (guestCat.value-1)*priceGuest;
+    let totalGuest = (guestCat.value - 1) * priceGuest;
     let total = (priceRoom + totalGuest) * GetDays();
-    TotalPrice.innerHTML = total;
+    RoomPrice.innerHTML = priceRoom * GetDays();
+    GuestPrice.innerHTML = totalGuest;
+    TotalPrice.innerHTML = total + " THB";
 }

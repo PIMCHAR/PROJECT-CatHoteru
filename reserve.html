@@ -65,18 +65,16 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="email" class="form-label">Email <span
-                                    class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <label for="email" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for confirm receipt.
                             </div>
                         </div>
 
                         <div class="col-12">
-                            <label for="email" class="form-label">Reconfirm-Email <span
-                                    class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <label for="email" class="form-label">Reconfirm-Email </label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for confirm receipt.
                             </div>
@@ -128,7 +126,12 @@
                                 Zip code required.
                             </div>
                         </div>
-                    </div>
+                        
+                        <div class="col-md-3">
+                            <label for="request" class="form-label">Special request</label>
+                            <input type="text" class="form-control" id="request" placeholder="">
+                        </div>
+                     </div>
                     <h4 class="mb-3">Payment</h4>
 
                     <div class="my-3">
@@ -191,8 +194,7 @@
                 </form>
             </div>
 
-            <div class="col-md-5 col-lg-4">
-
+            <div class="col-md-5 col-lg-3">
                 <div>
                     <label for="checkin-date">Check-in Date</label>
                     <input type="date" id="checkin-date" name="checkin" oninput="cal()" required>
@@ -201,19 +203,25 @@
                     <label for="checkout-date">Check-out Date</label>
                     <input type="date" id="checkout-date" name="checkout" oninput="cal()" required>
                 </div>
+                <p>No. of Days </p>
                 <p class="col-md-2 align-item-end" id="d-day">0 days</p>
                 <div>
-                    <input type="number" id="guestCat" min="1" max="4" value="1" onchange="cal()">Guest
+                    <p>Guest Cat</p>
+                    <input type="number" id="guestCat" min="1" max="4" value="1" onchange="cal()">
                 </div>
                 <div>
-                    <label> Type room </label>
-                    <select id="classRoom" oninput="cal()" >
+                    <label> Room type </label>
+                    <select id="classRoom" oninput="cal()">
                         <option value="basic">Standard Room</option>
                         <option value="vip">VIP ROOM</option>
                     </select>
                 </div>
 
                 <div>
+                    <p>Room price </p>
+                    <p id="roomPi"> 0 THB</p>
+                    <p>Guest (Optional)</p>
+                    <p id="guestPi"> 0 THB</p>
                     <p> TOTAL PRICE </p>
                     <p id="price"> 0 THB </p>
                 </div>
