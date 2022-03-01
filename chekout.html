@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve | CAT HOTERU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-1/css/5-3-1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/ic_cat.png" type="image/x-icon">
+</head>
+
+<body class="bg-rice">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fw-bolder fixed-top">
+            <div class="container">
+                <a class="navbar-brand fs-toppic " href="#">NEKO HOTERU</a>
+                <ul class="fs-content gnavi">
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page" href="room.html">ROOMS</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page"
+                            href="policies.html">POLICIES</a></li>
+                    <li class="nav-item"> <a class="nav-link active " aria-current="page"
+                            href="contact.html">CONTACT</a></li>
+                    <li class="nav-item current"> <a class="nav-link active " aria-current="page"
+                            href="reserve.html">RESERVE</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="position-absolute top-50 start-50 translate-middle" style="margin-top: 20%;">
+        <div class="bg-white text-center" style="height: 840px; width: 660px;">
+            <img src="imgs/CatLogo.png" alt="logo" style="height: 120px;">
+            <h1>“NEKO HOTERU”</h1>
+            <p>phayao university 19 moo 2, mae ka subdistrict,<br>
+                mueang phayao district, phayao province 56000<br>
+                080-XXX-XXXX</p>
+            <hr style="border-top:1px dashed black;">
+            
+            <table class="table align-middle" id="paragraph"
+                style="text-align:left; border-style: solid; width: 240px; height: 310px; ">
+                <tr>
+                    <th>Name :</th>
+                    <td><span id="name"> somchai </span></td>
+                </tr>
+                <tr>
+                    <th>Email :</th>
+                    <td><span id="email"> somchai@gmail.com </span></td>
+                </tr>
+                <tr>
+                    <th>Check-in :</th>
+                    <td><span id="checkin"> 02/02/2022 </span></td>
+                </tr>
+                <tr>
+                    <th>Check-out :</th>
+                    <td><span id="checkout"> 02/02/2022 </span></td>
+                </tr>
+                <tr>
+                    <th style="line-height: 20px;">
+                        Room type <br>
+                        No. of night<br>
+                        No. of cat
+                    </th>
+                    <td style="line-height: 20px;">
+                        <span id="room"> standard </span><br>
+                        <span id="day"> 0 Days </span><br>
+                        <span id="cat"> 1 </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td><span id="total"> 0 THB </span></td>
+                </tr>
+            </table>
+            <hr style="border-top:1px dashed black;">
+            <h1>Thank you for using the service.</h1>
+            <p>dont.submited@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    document.getElementById("name").innerHTML = localStorage.getItem("txtName");
+    document.getElementById("email").innerHTML = localStorage.getItem("txtEmail");
+    document.getElementById("checkin").innerHTML = localStorage.getItem("txtCheckin");
+    document.getElementById("checkout").innerHTML = localStorage.getItem("txtCheckout");
+    document.getElementById("cat").innerHTML = localStorage.getItem("txtCat");
+    document.getElementById("room").innerHTML = localStorage.getItem("txtRoom");
+    document.getElementById("day").innerHTML = localStorage.getItem("txtdDate") + " Days";
+    document.getElementById("total").innerHTML = localStorage.getItem("txtTotal") + " THB";
+</script>
+
+</html>

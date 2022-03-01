@@ -262,14 +262,19 @@ nav{
 }
 
 /*input*/
-.border_date{
-    border-style: solid;
+.item_input{
+    margin-top: 5%;
 }
 
-                    
-                            
+table {
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
 
-
+input{ 
+    border-style: solid;
+}
+            
 ul {
     list-style: none;
 }

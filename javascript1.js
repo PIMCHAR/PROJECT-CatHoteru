@@ -1,10 +1,8 @@
 (function () {
     'use strict'
+    var forms = document.querySelectorAll('.needs-validation');
+    /*export form*/
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
@@ -17,7 +15,6 @@
             }, false)
         })
 })()
-
 
 
 /* DATE */
@@ -69,11 +66,11 @@ function cal() {
 function calprice() {
     let RoomPrice = document.getElementById("roomPi");
     let GuestPrice = document.getElementById("guestPi");
-    let TotalPrice = document.getElementById("price");
+    let TotalPrice = document.getElementById("pricePi");
     let priceRoom = 0;
     let priceGuest = 0;
 
-    if (classRoom.value == "basic") {
+    if (classRoom.value == "standard") {
         priceRoom = 350;
         priceGuest = 80;
     } else {
@@ -82,8 +79,32 @@ function calprice() {
     }
 
     let totalGuest = (guestCat.value - 1) * priceGuest;
-    let total = (priceRoom + totalGuest) * GetDays();
-    RoomPrice.innerHTML = priceRoom * GetDays();
+    var total = (priceRoom + totalGuest) * GetDays();
+    RoomPrice.innerHTML = priceRoom;
     GuestPrice.innerHTML = totalGuest;
     TotalPrice.innerHTML = total + " THB";
+
+    return total;
 }
+
+function getData() {
+    //gettting the values
+    var fullName = document.getElementById("firstName").value;
+    var email = document.getElementById("email").value;
+    var checkinDate = document.getElementById("checkin-date").value;
+    var checkoutDate = document.getElementById("checkout-date").value;
+
+    var numCat = document.getElementById("guestCat").value;
+    var room = document.getElementById("classRoom").value;
+
+    //saving the values in local storage
+    localStorage.setItem("txtName", fullName);
+    localStorage.setItem("txtEmail", email);
+    localStorage.setItem("txtCheckin", checkinDate);
+    localStorage.setItem("txtCheckout", checkoutDate);
+    localStorage.setItem("txtCat", numCat);
+    localStorage.setItem("txtRoom", room);
+    localStorage.setItem("txtdDate", GetDays());
+    localStorage.setItem("txtTotal", calprice());
+}
+
