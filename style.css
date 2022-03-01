@@ -289,6 +289,11 @@ input {
     border-style: solid;
 }
 
+select{
+    border: 2px dimgray;
+    border-style: solid;
+}
+
 ul {
     list-style: none;
 }

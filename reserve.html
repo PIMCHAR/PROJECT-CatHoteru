@@ -203,31 +203,29 @@
                                     <label for="checkin-date">Check-in Date</label>
                                     <input type="date" id="checkin-date" name="check-in" oninput="cal()" required>
                                 </div>
-                                <div class="col-md-10">
+                                <div class="col-md-10" style="margin-bottom: 15px;">
                                     <label for="checkout-date">Check-out Date</label>
                                     <input type="date" id="checkout-date" name="check-out" oninput="cal()" required>
                                 </div>
+                                <hr class="hrline2">
                                 <div class="col-md-10">
                                     <span>Guest Cat </span>
                                     <input class="position-absolute start-50" name="Number of cat" type="number"
                                         id="guestCat" min="1" max="4" value="1" onchange="cal()">
                                 </div>
-                                <div class="col-md-10">
+                                <div class="col-md-10" style="margin-bottom: 15px;">
                                     <span> Room type </span>
-                                    <select class="position-absolute start-50" id="classRoom" oninput="cal()" >
+                                    <select class="position-absolute start-50" id="classRoom" oninput="cal()">
                                         <option value="standard">Standard Room</option>
                                         <option value="vip">VIP ROOM</option>
                                     </select>
                                 </div>
                             </div>
-
-                            <div>
-                                <span> Room price </span>
-                                <p id="roomPi"> 0 THB</p>
-                                <span>Guest (Optional)</span>
-                                <p id="guestPi"> 0 THB</p>
-                                <span> TOTAL PRICE </span>
-                                <p id="pricePi"> 0 THB </p>
+                            <hr class="hrline2">
+                            <div style="font-size: 14px;">
+                                <pre>Room price         <span id="roomsPi">0 THB </span></pre>                      
+                                <pre>Guest (Optional)   <span id="guestPi">0 THB </span></pre>
+                                <pre>TOTAL PRICE        <span id="pricePi">0 THB </span></pre>
                             </div>
                         </div>
                     </div>

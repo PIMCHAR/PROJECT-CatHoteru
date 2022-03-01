@@ -63,7 +63,7 @@ function cal() {
 
 /* Total price */
 function calprice() {
-    let RoomPrice = document.getElementById("roomPi");
+    let RoomPrice = document.getElementById("roomsPi");
     let GuestPrice = document.getElementById("guestPi");
     let TotalPrice = document.getElementById("pricePi");
     let priceRoom = 0;
