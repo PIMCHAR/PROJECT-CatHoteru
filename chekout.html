@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-1/css/5-3-1.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
     <link rel="icon" href="imgs/ic_cat.png" type="image/x-icon">
 </head>
 
@@ -37,17 +38,17 @@
         </nav>
     </header>
 
-    <div class="position-absolute top-50 start-50 translate-middle" style="margin-top: 20%;">
-        <div class="bg-white text-center" style="height: 840px; width: 660px;">
+    <div class="center" style="margin-top: 10%; margin-bottom: 5%;">
+        <div class="bg-white text-center" style="height: 820px; width: 660px; padding: 5%;border-radius: 5px;">
             <img src="imgs/CatLogo.png" alt="logo" style="height: 120px;">
-            <h1>“NEKO HOTERU”</h1>
+            <h3 style="margin-top: 5%;">“NEKO HOTERU”</h3>
             <p>phayao university 19 moo 2, mae ka subdistrict,<br>
                 mueang phayao district, phayao province 56000<br>
                 080-XXX-XXXX</p>
-            <hr style="border-top:1px dashed black;">
-            
-            <table class="table align-middle" id="paragraph"
-                style="text-align:left; border-style: solid; width: 240px; height: 310px; ">
+            <hr class="hrline2">
+
+            <table class="table align-middle" id="paragraph" style="width: 240px;
+            height: 310px;">
                 <tr>
                     <th>Name :</th>
                     <td><span id="name"> somchai </span></td>
@@ -81,9 +82,10 @@
                     <td><span id="total"> 0 THB </span></td>
                 </tr>
             </table>
-            <hr style="border-top:1px dashed black;">
-            <h1>Thank you for using the service.</h1>
+            <hr class="hrline2">
+            <h3 style="margin-top: 5%;">Thank you for using the service.</h3>
             <p>dont.submited@gmail.com</p>
+            <button type="button" class="btn_submit" name="button" id="print" onclick="window.print()">Dowload</button>
         </div>
     </div>
 

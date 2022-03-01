@@ -104,24 +104,25 @@
     text-align: center;
 }
 
-.feature-pad_img img{
+.feature-pad_img img {
     margin-left: 2%;
 }
+
 /* btn */
-.btn_custom{
+.btn_custom {
     margin-top: 10%;
     display: inline-block;
     font-weight: bold;
-    color:#fff;
+    color: #fff;
     padding: 18px 80px;
-    
-    border-radius:30px;
+
+    border-radius: 30px;
     text-decoration: none;
     outline: none;
     background: #000000;
 }
 
-.btn_contact{
+.btn_contact {
     display: inline-block;
     padding: 10px 40px;
     font-weight: bold;
@@ -132,19 +133,19 @@
     outline: none;
 }
 
-.btn_direct{
+.btn_direct {
     display: inline-block;
     padding: 15px 40px;
     font-weight: bold;
     color: #fff;
 
-    border-radius:30px;
+    border-radius: 30px;
     text-decoration: none;
     background: #000000;
     outline: none;
 }
 
-.btn_submit{
+.btn_submit {
     display: inline;
     padding: 10px 60px;
     font-weight: bold;
@@ -157,9 +158,8 @@
 }
 
 /*nav bar*/
-nav{
-    
-}
+nav {}
+
 .gnavi {
     margin-top: 1%;
     margin-bottom: auto;
@@ -185,8 +185,9 @@ nav{
 .gnavi li a:hover::after {
     transform: scale(1, 1);
 }
+
 /*bg topic*/
-.num-bg{
+.num-bg {
     display: inline-block;
     text-align: center;
     width: 70px;
@@ -215,30 +216,31 @@ nav{
     border-style: solid;
 }
 
-.icbox1{
+.icbox1 {
     margin-top: 48px;
     margin-bottom: 34px;
     height: 80px;
     width: auto;
 }
 
-.icbox2{
+.icbox2 {
     margin-top: 53px;
     margin-bottom: 39px;
     height: 70px;
     width: auto;
 }
 
-.icbox3{
+.icbox3 {
     margin-top: 55px;
     margin-bottom: 42px;
     height: 65px;
     width: auto;
 }
+
 /*term*/
 
-.term-item{
-    margin-bottom:60px;
+.term-item {
+    margin-bottom: 60px;
 }
 
 /*map*/
@@ -262,19 +264,31 @@ nav{
 }
 
 /*input*/
-.item_input{
+.item_input {
     margin-top: 5%;
 }
+
+.hrline2 {
+    border-top: 1px dashed black;
+    margin-top: 5%;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
 
 table {
     margin: 0 auto;
     margin-top: 3rem;
-  }
-
-input{ 
+    text-align: left;
     border-style: solid;
 }
-            
+
+input {
+    border-style: solid;
+}
+
 ul {
     list-style: none;
 }

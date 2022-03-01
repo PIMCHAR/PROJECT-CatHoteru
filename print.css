@@ -1,0 +1,14 @@
+@page{
+    size: A4;
+    margin: 0 auto;
+}
+
+#print {
+    display: none;
+    visibility: none;
+}
+
+header {
+    display: none;
+    visibility: none;
+}
