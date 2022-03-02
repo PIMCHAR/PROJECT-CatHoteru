@@ -12,7 +12,7 @@
                 }
                 form.classList.add('was-validated')
             }, false)
-        })
+        })  
 })()
 
 
@@ -106,4 +106,6 @@ function getData() {
     localStorage.setItem("txtdDate", GetDays());
     localStorage.setItem("txtTotal", calprice());
 }
+
+
 
