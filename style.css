@@ -157,6 +157,18 @@
     outline: none;
 }
 
+.btn_print {
+    display: inline;
+    padding: 8px 40px;
+    font-weight: bold;
+    color: #fff;
+
+    border-radius: 10px;
+    text-decoration: none;
+    background: #000000;
+    outline: none;
+}
+
 /*nav bar*/
 nav {}
 
@@ -268,11 +280,6 @@ nav {}
     margin-top: 5%;
 }
 
-.hrline2 {
-    border-top: 1px dashed black;
-    margin-top: 5%;
-}
-
 .center {
     margin: auto;
     width: 50%;
@@ -280,11 +287,13 @@ nav {}
 }
 
 table {
-    margin: 0 auto;
-    margin-top: 3rem;
-    text-align: left;
-    border-style: solid;
-}
+    border:1px solid;
+    border-left: none;
+    border-right: none;
+  }
+  td{
+    border: none;
+  }
 
 input {
     border-style: solid;
@@ -297,4 +306,11 @@ select {
 
 ul {
     list-style: none;
+}
+
+hr {
+    border: 2px dotted #000000;
+    border-style: none none dotted; 
+    color: #fff; 
+    background-color: #fff;
 }
