@@ -17,7 +17,7 @@
 
 /* input_tel */
 var telNum = document.getElementById("telephone");
-let check_num = ['test1']
+let check_num = []
 
 telNum.onkeyup = function () {
     if (telNum.value.length > 0) {
