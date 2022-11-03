@@ -15,37 +15,6 @@
         })
 })()
 
-/* input_tel */
-var telNum = document.getElementById("telephone");
-let check_num = []
-
-telNum.onkeyup = function () {
-    if (telNum.value.length > 0) {
-        if (telNum.value.length == 1) {
-            check_num.pop();
-        }
-        else if (telNum.value == 6) {
-            check_num.pop();
-        }
-        else if (telNum.value.length == 2) {
-            check_num.push(telNum.value);
-        }
-        else if (telNum.value.length == 6) {
-            check_num.push(telNum.value);
-        }
-        else if (telNum.value.length == 4) {
-            telNum.value = check_num[0];
-        }
-        else if (telNum.value.length == 8) {
-            telNum.value = check_num[1];
-        }
-        else if (telNum.value.length == 3 || telNum.value.length == 7) {
-            telNum.value += "-";
-        }
-        console.log(check_num)
-    }
-}
-
 /* DATE */
 var currentDateTime = new Date();
 var year = currentDateTime.getFullYear();
